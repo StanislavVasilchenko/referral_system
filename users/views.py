@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from users.models import User
-from users.serializers import UserRegistrationSerializer, UserLoginSerializer
+from users.serializers import UserRegistrationSerializer, UserLoginSerializer, UserProfileSerializer
 from users.utils import generate_invite_cod, generate_verify_code, send_verify_sms
 
 
@@ -41,5 +41,7 @@ class LoginAPIView(APIView):
         return Response({'message': 'invalid verification code'}, status=status.HTTP_400_BAD_REQUEST)
 
 
-class ProfileAPIView(generics.RetrieveAPIView):
-    ...
+class UserProfileAPIView(generics.RetrieveAPIView):
+    model = User
+    serializer_class = UserProfileSerializer
+    queryset = User.objects.all()
