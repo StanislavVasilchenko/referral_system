@@ -45,3 +45,18 @@ class UserProfileAPIView(generics.RetrieveAPIView):
     model = User
     serializer_class = UserProfileSerializer
     queryset = User.objects.all()
+
+
+class UserUpdateAPIView(generics.UpdateAPIView):
+    model = User
+    serializer_class = UserProfileSerializer
+    queryset = User.objects.all()
+
+    def update(self, request, *args, **kwargs):
+        subscribed_code = request.data['subscribed_code']
+        user = User.objects.get(id=kwargs['pk'])
+        if subscribed_code and user.subscribed_code != subscribed_code:
+            user.subscribed_code = subscribed_code
+            user.save()
+            return Response({'message': f'Add {subscribed_code} in your profile'}, status=status.HTTP_200_OK)
+        return Response({'message': f'{subscribed_code} already subscribed'}, status=status.HTTP_400_BAD_REQUEST)
