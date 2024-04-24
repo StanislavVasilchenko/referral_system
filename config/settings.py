@@ -83,7 +83,9 @@ DATABASES = {
         'NAME': DB_NAME,
         'USER': DB_USER,
         'PASSWORD': DB_PASSWORD,
-        'HOST': DB_HOST,
+        #  Для запуска проекта локально раскомментировать строку ниже
+        # 'HOST': DB_HOST,
+        'HOST': 'db',
         'PORT': DB_PORT
     }
 }
