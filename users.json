@@ -1,0 +1,107 @@
+[
+  {
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+      "password": "",
+      "last_login": "2024-04-23T18:21:13.313Z",
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-04-23T17:57:00.356Z",
+      "phone": "89998887766",
+      "invite_code": "QZW1RI",
+      "verify_code": null,
+      "subscribed_code": "A2C6WX",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 3,
+    "fields": {
+      "password": "",
+      "last_login": "2024-04-23T18:25:23.998Z",
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-04-23T18:21:43.620Z",
+      "phone": "89998887755",
+      "invite_code": "6N6EL1",
+      "verify_code": null,
+      "subscribed_code": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 4,
+    "fields": {
+      "password": "",
+      "last_login": "2024-04-23T18:46:59.831Z",
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-04-23T18:34:51.715Z",
+      "phone": "89998887700",
+      "invite_code": "UWSRQB",
+      "verify_code": null,
+      "subscribed_code": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 5,
+    "fields": {
+      "password": "",
+      "last_login": "2024-04-23T18:56:47.108Z",
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-04-23T18:54:34.958Z",
+      "phone": "89998887711",
+      "invite_code": "A2C6WX",
+      "verify_code": null,
+      "subscribed_code": "QZW1RI",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 6,
+    "fields": {
+      "password": "",
+      "last_login": "2024-04-23T18:57:51.627Z",
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-04-23T18:57:32.788Z",
+      "phone": "89998887722",
+      "invite_code": "KB636P",
+      "verify_code": null,
+      "subscribed_code": "QZW1RI",
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]
